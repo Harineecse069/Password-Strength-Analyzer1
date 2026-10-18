@@ -1,0 +1,47 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Password Strength Analyzer</h1>
+        <p>Check your password security instantly.</p>
+
+        <label for="password">Enter Password</label>
+
+        <input type="password" id="password"
+               placeholder="Type a test password">
+
+        <div id="strength">Strength: Not checked</div>
+
+        <div class="meter">
+            <div id="bar"></div>
+        </div>
+
+        <h3>Security Checklist</h3>
+
+        <ul>
+            <li id="length">At least 12 characters</li>
+            <li id="uppercase">An uppercase letter</li>
+            <li id="lowercase">A lowercase letter</li>
+            <li id="number">A number</li>
+            <li id="special">A special character</li>
+        </ul>
+
+        <h3>Suggestions</h3>
+        <p id="suggestions">Enter a password to begin.</p>
+
+        <button id="toggle" type="button">Show Password</button>
+        <button id="generate" type="button">Generate Password</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
